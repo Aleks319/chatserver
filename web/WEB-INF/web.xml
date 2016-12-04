@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GetList</servlet-name>
+		<servlet-class>ua.kiev.prog.GetListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetList</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Users</servlet-name>
+		<servlet-class>ua.kiev.prog.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Users</servlet-name>
+		<url-pattern>/get</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>NewUsers</servlet-name>
+		<servlet-class>ua.kiev.prog.NewUsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewUsers</servlet-name>
+		<url-pattern>/new</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Add</servlet-name>
+		<servlet-class>ua.kiev.prog.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddChat</servlet-name>
+		<servlet-class>ua.kiev.prog.ChatRoomServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddChat</servlet-name>
+		<url-pattern>/addchat</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UsInfo</servlet-name>
+		<servlet-class>ua.kiev.prog.UsersInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsInfo</servlet-name>
+		<url-pattern>/info</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
